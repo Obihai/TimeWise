@@ -1,0 +1,81 @@
+/* Stylish Checkbox */
+.task-card .custom-checkbox input {
+  width: 1.2em;
+  height: 1.2em;
+  cursor: pointer;
+  border: 2px solid #3498db; /* Border for the checkbox */
+  border-radius: 4px; /* Rounded corners */
+  margin-right: 8px; /* Spacing between checkbox and label */
+}
+
+/* Hover Effect with Shadow */
+.task-card.touch-shadow:hover {
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.7); /* Blue shadow on hover */
+  transform: scale(1.02); /* Slightly scale up the card */
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Dashed Border for Card Group */
+.card-group-outline {
+  border: 2px dashed #e74c3c; /* Red dashed border */
+  padding: 16px; /* Add some padding to the card group */
+}
+
+/* Line-through Text */
+.text-line-through {
+  text-decoration: line-through;
+  color: #999; /* Change the color of the strikethrough text to gray */
+}
+
+/* Top Right Hand */
+.top-right-hand {
+  display: inline-block;
+  transform: rotate(45deg);
+  color: #fff; /* White text color for better visibility */
+  padding: 4px 8px; /* Add padding to the rotated element */
+  border-radius: 4px; /* Rounded corners */
+  margin-left: 8px; /* Spacing between the rotated element and other content */
+}
+
+
+/* Style the entire App container */
+.custom-app {
+  background-color: #f8f9fa; /* Background color for the App */
+  font-family: Arial, sans-serif; /* Choose your preferred font family */
+}
+
+/* Style the Navbar within the App */
+.custom-app .custom-navbar {
+  background-color: #3498db; /* Navbar background color */
+  color: #fff; /* Navbar text color */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Navbar shadow */
+  padding: 10px 20px; /* Navbar padding */
+}
+
+.custom-app .custom-navbar .navbar-brand {
+  font-weight: bold; /* Make the Navbar brand text bold */
+  font-size: 24px; /* Adjust the font size */
+}
+
+.custom-app .custom-navbar .navbar-brand:hover {
+  color: #f39c12; /* Change Navbar brand text color on hover */
+}
+
+
+.hovering-image {
+  position: relative;
+  animation: hoverAnimation 2s ease-in-out infinite;
+}
+
+@keyframes hoverAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Adjust the distance it hovers */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
